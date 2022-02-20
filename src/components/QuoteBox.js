@@ -1,4 +1,4 @@
-export const QuoteBox = ({ quotes }) => {
+export const QuoteBox = ({ quotes, changeQuote }) => {
   const { quote, author } = quotes;
   return (
     <div id="quote-box">
@@ -17,7 +17,9 @@ export const QuoteBox = ({ quotes }) => {
         >
           Twitter
         </a>
-        <button id="new-quote">New quote</button>
+        <button id="new-quote" onClick={changeQuote}>
+          New quote
+        </button>
       </div>
     </div>
   );
