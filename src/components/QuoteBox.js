@@ -1,3 +1,5 @@
+import { FaTwitterSquare } from "react-icons/fa";
+
 export const QuoteBox = ({ quotes, changeQuote }) => {
   const { quote, author } = quotes;
   return (
@@ -15,9 +17,13 @@ export const QuoteBox = ({ quotes, changeQuote }) => {
           target="_blank"
           rel="noreferrer"
         >
-          Twitter
+          <FaTwitterSquare style={{ fontSize: "40px", color: "coral" }} />
         </a>
-        <button id="new-quote" onClick={changeQuote}>
+        <button
+          className="css-button-gradient--2"
+          id="new-quote"
+          onClick={changeQuote}
+        >
           New quote
         </button>
       </div>
