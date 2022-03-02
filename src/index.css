@@ -3,14 +3,6 @@
   padding: 0;
 }
 
-#container {
-  display: flex;
-  background: linear-gradient(315deg, #bdc3c7 0%, coral 40%);
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 #quote-box {
   background-color: #fff;
   width: 30rem;
@@ -19,15 +11,6 @@
   border: solid thin #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 5px;
-}
-
-#quote-box figure {
-  display: flex;
-  color: coral;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1.8rem;
-  padding-bottom: 1.5rem;
 }
 
 #quote-box figure figcaption {
@@ -39,26 +22,4 @@
 .container-button {
   display: flex;
   justify-content: space-between;
-}
-.css-button-gradient--2 {
-  min-width: 100px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background-size: 120% auto;
-  background-image: linear-gradient(315deg, #bdc3c7 0%, coral 40%);
-}
-.css-button-gradient--2:hover {
-  background-position: right center;
-}
-.css-button-gradient--2:active {
-  top: 2px;
 }

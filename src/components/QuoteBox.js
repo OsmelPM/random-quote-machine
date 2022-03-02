@@ -1,15 +1,19 @@
-import { FaTwitterSquare } from "react-icons/fa";
+import { useContext } from "react";
+import { AppContext } from "./context/AppContext";
+import { Button, Figure, Twitter } from "./CssComponents";
 
-export const QuoteBox = ({ quotes, changeQuote }) => {
+export const QuoteBox = () => {
+  const { quotes, changeQuote, color } = useContext(AppContext);
   const { quote, author } = quotes;
+
   return (
     <div id="quote-box">
-      <figure>
+      <Figure color={color}>
         <blockquote id="text" cite="url-cualquiera">
           {quote}
         </blockquote>
         <figcaption id="author">{`- ${author}`}</figcaption>
-      </figure>
+      </Figure>
       <div className="container-button">
         <a
           href="http://twitter.com/intent/tweet"
@@ -17,15 +21,11 @@ export const QuoteBox = ({ quotes, changeQuote }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaTwitterSquare style={{ fontSize: "40px", color: "coral" }} />
+          <Twitter color={color} />
         </a>
-        <button
-          className="css-button-gradient--2"
-          id="new-quote"
-          onClick={changeQuote}
-        >
+        <Button id="new-quote" color={color} onClick={changeQuote}>
           New quote
-        </button>
+        </Button>
       </div>
     </div>
   );
