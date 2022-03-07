@@ -16,7 +16,7 @@ export const AppProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const random = () => Math.floor(Math.random() * 101);
   const [nextQuote, setNextQuote] = useState(random());
-  const [color, setColor] = useState(null);
+  const [color, setColor] = useState("gray");
 
   const changeColor = () => {
     const idx = Math.floor(Math.random() * 5);
