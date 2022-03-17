@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://osmelpm.github.io/random-quote-machine",
   "dependencies": {
+    "nth-check": ">=2.0.1",
     "follow-redirects": ">=1.14.8",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
